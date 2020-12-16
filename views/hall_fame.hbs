@@ -1,0 +1,17 @@
+{{#extends 'base'}}
+{{#block 'content'}}
+<h1 style="text-align:center">Hall Of Fame</h1> 
+<table class="table">
+    <tr>
+        <th>Player Name :</th>
+        <th>Won amount :</th>
+    </tr>
+    <tr>
+        {{#each hall_fame}}
+        <td>{{this.player_name}}</td>
+        <td>{{this.fund}}</td>
+    </tr>
+    {{/each}}
+</table>
+{{/block}}
+{{/extends}}
